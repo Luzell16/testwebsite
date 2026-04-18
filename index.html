@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Perkembangan Digital</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    animation: fadeDown 1s ease;
+}
+
+header h1 {
+    font-size: 3em;
+}
+
+header p {
+    opacity: 0.8;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: center;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00d4ff;
+}
+
+/* CONTAINER */
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+    gap: 20px;
+}
+
+/* CARD */
+.card {
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    transition: 0.4s;
+    animation: fadeUp 1s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* IMAGE */
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* ANIMASI */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🚀 Perkembangan Digital</h1>
+    <p>Belajar teknologi dengan cara yang lebih menarik</p>
+</header>
+
+<nav>
+    <a href="#pengertian">Pengertian</a>
+    <a href="#sejarah">Sejarah</a>
+    <a href="#manfaat">Manfaat</a>
+    <a href="#dampak">Dampak</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="pengertian">
+        <img src="https://source.unsplash.com/400x250/?technology" alt="">
+        <h2>📘 Pengertian</h2>
+        <p>Perkembangan digital adalah perubahan teknologi dari manual ke sistem berbasis internet.</p>
+    </div>
+
+    <div class="card" id="sejarah">
+        <img src="https://source.unsplash.com/400x250/?internet" alt="">
+        <h2>📜 Sejarah</h2>
+        <p>Dari alat manual hingga era AI dan smartphone modern.</p>
+    </div>
+
+    <div class="card" id="manfaat">
+        <img src="https://source.unsplash.com/400x250/?online" alt="">
+        <h2>✅ Manfaat</h2>
+        <p>Mempermudah komunikasi, belajar, dan bisnis.</p>
+    </div>
+
+    <div class="card" id="dampak">
+        <img src="https://source.unsplash.com/400x250/?cyber" alt="">
+        <h2>⚠️ Dampak</h2>
+        <p>Hoaks, kecanduan gadget, dan kejahatan digital.</p>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Website Edukasi Digital</p>
+</footer>
+
+</body>
+</html>
